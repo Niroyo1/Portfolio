@@ -1,0 +1,20 @@
+{
+  "downloadResume": "Descargar CV",
+  "contactMe": "Contáctame",
+
+  "about": "Soy un apasionado desarrollador de software con más de <1>3 años de experiencia</1> creando aplicaciones escalables y de alto rendimiento. Mi stack principal incluye <1>Genexus, JavaScript y React</1>, aunque también me siento cómodo explorando nuevas tecnologías cuando el proyecto lo requiere.",
+
+  "educationTitle": "Educación",
+  "educationORT" : {
+    "title": "ORT - Analista en tecnologías de la información",
+    "description": "Como graduado de ATI, adquirí una sólida formación en desarrollo de software, incluyendo programación, bases de datos y gestión de requerimientos. Aprendí a diseñar y desarrollar aplicaciones eficientes y escalables, aplicando buenas prácticas de codificación y trabajando en proyectos colaborativos."
+  },
+
+  "experienceTitle": "Experiencia",
+  "experienceBigCheese" : {
+    "company": "BigCheese",
+    "description": "He desarrollado y mantenido aplicaciones web y mobile, trabajando en entornos ágiles junto a diseñadores, testers y product managers. Colaboré en todas las etapas del desarrollo, siguiendo buenas prácticas de código y metodologías como Scrum para entregar productos funcionales, escalables y alineados con las necesidades del usuario final."
+  },
+
+  "technologiesTitle": "Tecnologías"
+}

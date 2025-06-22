@@ -1,0 +1,43 @@
+'use client'
+import { useEffect, useState } from 'react'
+import { useTranslation } from 'react-i18next'
+import '../../lib/i18n'
+
+export default function LanguageSwitcher() {
+  const { i18n } = useTranslation()
+  const [isClient, setIsClient] = useState(false)
+
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
+
+  if (!isClient) return null
+
+  const currentLang = i18n.language
+  const changeLanguage = (lng: string) => {
+    i18n.changeLanguage(lng)
+  }
+  const languages = ['es', 'en']
+
+  return (
+  <div className="z-50 flex gap-5
+  pt-8 pl-8
+  md:mt-0 md:mx-0 md:fixed md:top-4 md:right-4 md:mr-40
+">
+    {languages.map((lng) => (
+      <button
+        key={lng}
+        onClick={() => changeLanguage(lng)}
+        className={`w-10 h-10 rounded-full ring-2 text-xs transition-all
+          ${
+            currentLang === lng
+              ? 'bg-Aquamarine text-black ring-Aquamarine'
+              : 'text-white ring-white hover:text-Aquamarine hover:ring-Aquamarine'
+          }`}
+      >
+        {lng.toUpperCase()}
+      </button>
+    ))}
+  </div>
+)
+}

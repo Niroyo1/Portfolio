@@ -1,0 +1,74 @@
+'use client'
+import { useEffect, useState } from 'react'
+import { useTranslation } from 'react-i18next'
+import '../../lib/i18n'
+
+export default function Main() {
+  const { t } = useTranslation()
+  const [isClient, setIsClient] = useState(false)
+
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
+
+  if (!isClient) return null // Evita render server/client desalineados
+
+  return (
+    <section className="flex flex-col justify-center gap-4 items-center sm:items-start text-center sm:text-left mb-8 sm:mb-0">
+      <div className="flex flex-col gap-0 leading-tight">
+        <h1 className="!text-6xl font-bold text-white">Nicolás Rodriguez</h1>
+        <h2 className="!text-3xl font-semibold text-Aquamarine">Full-Stack Developer</h2>
+      </div>
+
+      <div className="flex items-center gap-2 text-LightCyan">
+        <img
+          src="/icons/Location.svg"
+          alt="Ubicación"
+          className="h-5 w-5 object-contain leading-none"
+        />
+        <span>San Jacinto, Uruguay</span>
+      </div>
+
+      <div className="mt-4 flex flex-wrap gap-4 justify-center sm:justify-start">
+        <a
+          href="/NicolasRodriguezCV.pdf"
+          download
+          className="px-6 py-2 rounded-xl !bg-black ring-1 ring-LightCyan text-LightCyan font-semibold transition-colors duration-200 hover:ring-Aquamarine hover:text-Aquamarine"
+        >
+          {t('downloadResume')}
+        </a>
+        <a
+          href="mailto:nicorodriguez9900@gmail.com"
+          className="px-6 py-2 rounded-xl !bg-black ring-1 ring-LightCyan text-LightCyan font-semibold transition-colors duration-200 hover:ring-Aquamarine hover:text-Aquamarine"
+        >
+          {t('contactMe')}
+        </a>
+      </div>
+
+      <div className="hidden md:flex gap-6 mt-106">
+        <a
+          href="https://github.com/Niroyo1?tab=repositories"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="/icons/Github.svg"
+            alt="GitHub"
+            className="h-6 w-6 hover:opacity-80 transition-opacity duration-200"
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/nicol%C3%A1s-rodriguez-844b681a8/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="/icons/Linkedin.svg"
+            alt="LinkedIn"
+            className="h-6 w-6 hover:opacity-80 transition-opacity duration-200"
+          />
+        </a>
+      </div>
+    </section>
+  )
+}

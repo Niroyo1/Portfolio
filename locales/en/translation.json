@@ -1,0 +1,20 @@
+{
+  "downloadResume": "Download Resume",
+  "contactMe": "Contact Me",
+
+  "about": "I'm a passionate software developer with over <1>3 years of experience</1> building scalable and high-performance applications. My main tech stack includes <1>Genexus, JavaScript, and React</1>, though I'm also comfortable exploring new technologies when the project calls for it.",
+  
+  "educationTitle": "Education",
+  "educationORT" : {
+    "title": "ORT - Analist in information technologies",
+    "description": "As an ATI graduate, I gained a solid foundation in software development, including programming, databases, and requirements management. I learned to design and develop efficient and scalable applications, applying good coding practices and working on collaborative projects."
+  },
+
+  "experienceTitle": "Experience",
+  "experienceBigCheese" : {
+    "company": "BigCheese",
+    "description": "I have developed and maintained web and mobile applications, working in agile environments alongside designers, testers, and product managers. I collaborated in all stages of development, following good coding practices and methodologies such as Scrum to deliver functional, scalable products aligned with end-user needs."
+  },
+
+  "technologiesTitle": "Technologies"
+}

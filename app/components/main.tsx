@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next'
 import '../../lib/i18n'
 
 export default function Main() {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   const [isClient, setIsClient] = useState(false)
 
   useEffect(() => {
@@ -13,9 +13,14 @@ export default function Main() {
 
   if (!isClient) return null // Evita render server/client desalineados
 
+  const resumeFile =
+    i18n.language === 'es'
+      ? '/NicolasRodriguezCVes.pdf'
+      : '/NicolasRodriguezCVen.pdf'
+
   return (
-    <section className="flex flex-col justify-center gap-4 items-center sm:items-start text-center sm:text-left mb-8 sm:mb-0">
-      <div className="flex flex-col gap-0 leading-tight">
+    <section className="flex flex-col justify-center gap-4 items-center 2xl:items-start mb-8 2xl:mb-0">
+      <div className="flex flex-col gap-0 leading-tight text-center 2xl:text-left">
         <h1 className="!text-6xl font-bold text-white">Nicolás Rodriguez</h1>
         <h2 className="!text-3xl font-semibold text-Aquamarine">Full-Stack Developer</h2>
       </div>
@@ -29,9 +34,9 @@ export default function Main() {
         <span>San Jacinto, Uruguay</span>
       </div>
 
-      <div className="mt-4 flex flex-wrap gap-4 justify-center sm:justify-start">
+      <div className="mt-4 flex flex-wrap gap-4 justify-center 2xl:justify-start">
         <a
-          href="/NicolasRodriguezCV.pdf"
+          href={resumeFile}
           download
           className="px-6 py-2 rounded-xl !bg-black ring-1 ring-LightCyan text-LightCyan font-semibold transition-colors duration-200 hover:ring-Aquamarine hover:text-Aquamarine"
         >
@@ -45,7 +50,7 @@ export default function Main() {
         </a>
       </div>
 
-      <div className="hidden md:flex gap-6 mt-106">
+      <div className="hidden 2xl:flex gap-6 mt-70">
         <a
           href="https://github.com/Niroyo1?tab=repositories"
           target="_blank"

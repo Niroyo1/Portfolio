@@ -1,10 +1,9 @@
 'use client'
-import { useTranslation, Trans } from 'react-i18next'
+import { Trans } from 'react-i18next'
 import '../../lib/i18n'
 import { useEffect, useState } from 'react'
 
 export default function About() {
-  const { t } = useTranslation()
   const [isClient, setIsClient] = useState(false)
 
   useEffect(() => {

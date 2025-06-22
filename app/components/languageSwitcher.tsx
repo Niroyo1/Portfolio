@@ -29,7 +29,7 @@ export default function LanguageSwitcher() {
   return (
     <div className="z-50 flex gap-5
       pt-8 pl-8
-      md:mt-0 md:mx-0 md:fixed md:top-4 md:right-4 md:mr-40"
+      2xl:mt-0 2xl:mx-0 2xl:fixed 2xl:top-4 2xl:right-4 2xl:mr-40"
     >
       {languages.map((lng) => (
         <button

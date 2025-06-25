@@ -73,7 +73,7 @@ export default function Technologies() {
                     className="w-full px-4"
                   >
                     {itemsToRender.map((tech, index) => (
-                      <SwiperSlide key={`${tech.name}-${index}`} className="!w-auto">
+                      <SwiperSlide key={`${tech.name}-${index}`} className="!w-40">
                         <TechnologyCard tech={tech} />
                       </SwiperSlide>
                     ))}
@@ -95,7 +95,7 @@ export default function Technologies() {
 
 function TechnologyCard({ tech }: { tech: { name: string; icon: string } }) {
   return (
-    <div className="w-36 h-30 flex flex-col items-center justify-center gap-4 p-4 rounded-2xl shadow-md hover:shadow-lg transition">
+    <div className="w-36 h-28 flex flex-col items-center justify-center gap-4 p-3 rounded-2xl shadow-md hover:shadow-lg transition">
       <div className="w-12 h-12 flex items-center justify-center">
         <img
           src={tech.icon}

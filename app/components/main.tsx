@@ -19,13 +19,14 @@ export default function Main() {
       : '/NicolasRodriguezCVen.pdf'
 
   return (
-    <section className="flex flex-col justify-center gap-4 items-center 2xl:items-start mb-8 2xl:mb-0">
-      <div className="flex flex-col gap-0 leading-tight text-center 2xl:text-left">
+    <section className="relative flex flex-col justify-center gap-4 items-center 2xl:items-start mb-8 2xl:mb-0">
+
+      <div className="relative z-10 flex flex-col gap-0 leading-tight text-center 2xl:text-left">
         <h1 className="!text-6xl font-bold text-white">Nicolás Rodriguez</h1>
         <h2 className="!text-3xl font-semibold text-Aquamarine">Full-Stack Developer</h2>
       </div>
 
-      <div className="flex items-center gap-2 text-LightCyan">
+      <div className="relative z-10 flex items-center gap-2 text-LightCyan">
         <img
           src="/icons/Location.svg"
           alt="Ubicación"
@@ -34,7 +35,7 @@ export default function Main() {
         <span>San Jacinto, Uruguay</span>
       </div>
 
-      <div className="mt-4 flex flex-wrap gap-4 justify-center 2xl:justify-start">
+      <div className="relative z-10 mt-4 flex flex-wrap gap-4 justify-center 2xl:justify-start">
         <a
           href={resumeFile}
           download
@@ -50,7 +51,7 @@ export default function Main() {
         </a>
       </div>
 
-      <div className="hidden 2xl:flex gap-6 mt-70">
+      <div className="relative z-10 hidden 2xl:flex gap-6 mt-100">
         <a
           href="https://github.com/Niroyo1?tab=repositories"
           target="_blank"

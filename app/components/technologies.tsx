@@ -7,6 +7,23 @@ import { Autoplay } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/autoplay'
 
+function useIsMobile(breakpoint = 640) {
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= breakpoint)
+    }
+
+    handleResize()
+    window.addEventListener('resize', handleResize)
+
+    return () => window.removeEventListener('resize', handleResize)
+  }, [breakpoint])
+
+  return isMobile
+}
+
 const technologies = [
   { name: "Next js", icon: "/icons/NextJs.svg", row: 1 },
   { name: "React", icon: "/icons/React.svg", row: 1 },
@@ -34,6 +51,7 @@ const groupedByRow = technologies.reduce((acc, tech) => {
 export default function Technologies() {
   const { t } = useTranslation()
   const [isClient, setIsClient] = useState(false)
+  const isMobile = useIsMobile()
 
   useEffect(() => {
     setIsClient(true)
@@ -50,7 +68,7 @@ export default function Technologies() {
         {Object.entries(groupedByRow)
           .sort(([a], [b]) => Number(a) - Number(b))
           .map(([row, techs]) => {
-            const shouldLoop = techs.length > 3
+            const shouldLoop = (isMobile && techs.length > 1 || techs.length > 3)
             const itemsToRender = shouldLoop ? [...techs, ...techs] : techs
 
             return (
@@ -63,7 +81,7 @@ export default function Technologies() {
                     modules={[Autoplay]}
                     slidesPerView="auto"
                     spaceBetween={24}
-                    loop={false}
+                    loop={true}
                     speed={8000}
                     autoplay={{
                       delay: 0,

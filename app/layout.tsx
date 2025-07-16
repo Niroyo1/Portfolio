@@ -18,7 +18,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={`${rajdhani.className} antialiased`}>
+      <body className={`${rajdhani.variable} antialiased`}>
         <CustomCursor />
         {children}
       </body>

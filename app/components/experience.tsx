@@ -40,10 +40,10 @@ export default function Experience() {
           href={url}
           target="_blank"
           rel="noopener noreferrer"
-          className="group block mb-10 p-4 pl-4 rounded-xl hover:ring-2 hover:ring-Aquamarine hover:bg-[#0b0f14]"
+          className="group block mb-10 p-4 pl-4 rounded-xl hover:ring-2 hover:ring-Aquamarine"
         >
           <div className="flex justify-start items-center flex-wrap gap-x-4 gap-y-2">
-            <h3 className="text-white text-2xl font-semibold transition-colors duration-75 group-hover:text-Aquamarine">
+            <h3 className="text-white text-2xl font-semibold transition-colors duration-75 group-hover:text-Aquamarine ">
               {t(`${key}.company`)}
             </h3>
             <span className="text-LightCyan text-sm pb-4">{period}</span>

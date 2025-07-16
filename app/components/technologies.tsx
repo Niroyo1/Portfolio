@@ -68,13 +68,13 @@ export default function Technologies() {
         {Object.entries(groupedByRow)
           .sort(([a], [b]) => Number(a) - Number(b))
           .map(([row, techs]) => {
-            const shouldLoop = (isMobile && techs.length > 1 || techs.length > 3)
+            const shouldLoop = (isClient && ((isMobile && techs.length > 1) || techs.length > 3))
             const itemsToRender = shouldLoop ? [...techs, ...techs] : techs
 
             return (
               <div
                 key={row}
-                className="ring-2 ring-LightCyan rounded-2xl"
+                className="ring-2 ring-LightCyan hover:ring-Aquamarine rounded-2xl"
               >
                 {shouldLoop ? (
                   <Swiper

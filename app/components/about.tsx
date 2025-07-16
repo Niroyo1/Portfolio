@@ -4,8 +4,7 @@ import '../../lib/i18n'
 import { useEffect, useState } from 'react'
 
 export default function About() {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const { t } = useTranslation() // <-- así el componente re-renderiza al cambiar idioma
+  const { t } = useTranslation()
   const [isClient, setIsClient] = useState(false)
 
   useEffect(() => {

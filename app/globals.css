@@ -27,6 +27,7 @@
 
 body {
   background: var(--background);
+  font-family: var(--font-rajdhani), sans-serif;
   color: var(--foreground);
   padding: 0;
   margin: 0;

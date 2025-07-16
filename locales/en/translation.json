@@ -13,8 +13,16 @@
   "experienceTitle": "Experience",
   "experienceBigCheese" : {
     "company": "BigCheese",
-    "description": "I have developed and maintained web and mobile applications, working in agile environments alongside designers, testers, and product managers. I collaborated in all stages of development, following good coding practices and methodologies such as Scrum to deliver functional, scalable products aligned with end-user needs."
+    "description": "I developed and maintained web and mobile applications, working in agile environments alongside designers, testers, and product managers. I collaborated in all stages of development, following good coding practices and methodologies such as Scrum to deliver functional, scalable products aligned with end-user needs."
   },
 
-  "technologiesTitle": "Technologies"
+  "technologiesTitle": "Technologies",
+
+  "projectsTitle": "Projects",
+  "projectMiCartelera" : {
+    "description": "Web application that consumes movies and TV shows data from the TheMovieDB API.<1 /> It displays popular titles, synopses, ratings, and posters in a minimalist and visually appealing design.<1 /> Users can explore current trends, search for specific content, and access full details for each production."
+  },
+  "projectIsThisFlag" : {
+    "description": "Real-time responsive web application with a retro aesthetic, where two players compete to discover flags from different countries. In each round, they can choose to ask the opponent a question or try to guess their flag."
+  }
 }

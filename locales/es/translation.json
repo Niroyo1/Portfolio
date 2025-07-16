@@ -23,7 +23,7 @@
     "description": "Aplicación web que consume datos de películas y series desde la API de TheMovieDB.<1 /> Muestra títulos populares, sinopsis, calificaciones y pósters en un diseño minimalista y atractivo.<1 /> Los usuarios pueden explorar tendencias actuales, buscar contenido específico y acceder a los detalles completos de cada producción."
   },
   "projectIsThisFlag" : {
-    "description": "Aplicación web responsiva en tiempo real con estética retro en donde dos jugadores compiten por descubrir banderas de distintos países. En cada ronda se puede preguntar al rival o adivinar la bandera del mismo."
+    "description": "Aplicación web responsiva en tiempo real con estética retro, en donde dos jugadores compiten por descubrir banderas de distintos países. En cada ronda se puede preguntar al rival o adivinar la bandera del mismo."
   }
 
 }

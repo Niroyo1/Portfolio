@@ -18,7 +18,7 @@
 
   "technologiesTitle": "Tecnologías",
 
-  "projectsTitle": "Projectos",
+  "projectsTitle": "Proyectos",
   "projectMiCartelera" : {
     "description": "Aplicación web que consume datos de películas y series desde la API de TheMovieDB.<1 /> Muestra títulos populares, sinopsis, calificaciones y pósters en un diseño minimalista y atractivo.<1 /> Los usuarios pueden explorar tendencias actuales, buscar contenido específico y acceder a los detalles completos de cada producción."
   },

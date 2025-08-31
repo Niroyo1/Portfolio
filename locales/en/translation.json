@@ -2,8 +2,8 @@
   "downloadResume": "Download Resume",
   "contactMe": "Contact Me",
 
-  "about": "Information Technology Analyst with over 3 years of experience in development, mainly using Genexus and React. Seeking to continue learning and improving my skills while contributing value to dynamic teams and challenging projects.",
-  
+  "about": "Information Technology Analyst with over <1>3 years of experience in development</1>, mainly using <2>Genexus and React</2>. Seeking to continue learning and improving my skills while contributing value to dynamic teams and challenging projects.",
+
   "educationTitle": "Education",
   "educationORT" : {
     "title": "ORT - Information Technology Analyst",
